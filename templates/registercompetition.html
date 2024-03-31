@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% load static %} {% block title %} Upload Competition
+{% endblock title %} {% block style %}<link
+  rel="stylesheet"
+  href="{% static 'index.css' %}"
+/><link rel="stylesheet" href="{% static 'register.css' %}" />{% endblock style %} {% block head %}{% endblock head %} {% block body %}
+
+<div class="ajax-container">
+  <form
+    action="{% url 'eventportal:registercompetition' %}"
+    method="post"
+    enctype="multipart/form-data"
+    class="ajax"
+  >
+    {% csrf_token %}
+    <h2>Upload Competition</h2>
+    <input name="title" type="text" placeholder="Competition Name" required />
+    <input name="venue" type="text" placeholder="Competition Venue" required />
+    <input name="date" type="date" placeholder="Competition date" required />
+    <input name="time" type="time" placeholder="Competition Time" required />
+    <input name="dept" type="text" placeholder="Department/Group" required />
+    <input
+      name="url"
+      type="text"
+      placeholder="Registration Form Link"
+      required
+    />
+    <input
+      name="img"
+      type="file"
+      placeholder="Upload Competition Image"
+      required
+    />
+    <textarea name="desc" cols="30" rows="20"></textarea>
+    <button type="submit">Upload</button>
+  </form>
+</div>
+
+{% endblock body %}

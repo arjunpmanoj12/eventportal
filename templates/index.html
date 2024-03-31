@@ -2,20 +2,6 @@
   rel="stylesheet"
   href="{% static 'index.css' %}"
 />{% endblock style %} {% block head %}{% endblock head %} {% block body %}
-
-<header class="header">
-  <a href="#" class="logo"><img src="{% static 'images/cce.png' %}" /></a>
-  <nav class="navbar">
-    <a href="#">Events</a>
-    <a href="#">Calendar</a>
-    <a href="#">Competitions</a>
-    <a href="{% url 'eventportalapp:register' %}"
-      ><button type="button">
-        <i class="fas fa-circle-plus"></i>Create Events
-      </button></a
-    >
-  </nav>
-</header>
 <div class="textt">
   <h2>Upcoming Events</h2>
 </div>

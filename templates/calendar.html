@@ -1,0 +1,207 @@
+{% extends "base.html" %} {% load static %} {% block title %} Calendar {% endblock title %} {% block style %}<link
+  rel="stylesheet"
+  href="{% static 'index.css' %}"
+/><link rel="stylesheet" href="{% static 'register.css' %}" />
+<link rel="stylesheet" href="{% static 'calendar_2.css' %}" />
+<link rel="stylesheet" href="{% static 'calendar_1.css' %}" />{% endblock style %} {% block head %}{% endblock head %} {% block body %}
+
+<nav class="nav">
+  <ul class="left">
+    <li>
+      <a href="#"><img src="{% static 'images\cce.png' %}" alt="logo" /></a>
+    </li>
+  </ul>
+  <ul class="right">
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Calendar</a></li>
+    <li><a href="#">Competitions</a></li>
+    <ul class="button">
+      <li>
+        <a href="#"
+          ><img src="{% static 'images/user-solid.svg' %}" alt="user"
+        /></a>
+      </li>
+      <li><a href="#">Sign in</a></li>
+    </ul>
+  </ul>
+</nav>
+<div
+  style="
+    display: inline-block;
+    width: 1600px;
+    height: 1200px;
+    background: white;
+  "
+  data-ignore="used only for top most containter width"
+>
+  <div class="calendar-container1">
+    <p class="calendar-title">Calendar</p>
+
+    <div class="filter-department-container">
+      <div class="department-filter-container1">
+        <div class="filter-department-container1">
+          <div class="department-filter-container">
+            <img
+              src="{% static 'images/img_8_373_74fe34.png' %}"
+              class="image-container1"
+            />
+          </div>
+        </div>
+        <div class="calendar-container2">
+          <div class="container-with-months">
+            <!-- PLACEHOLDER - Button Component detected here. Go to "React Code" via right click menu to see code generated -->
+            <div class="month-list">
+              <button class="month" data-month="0">Jan</button>
+              <button class="month" data-month="1">Feb</button>
+              <button class="month" data-month="1">Mar</button>
+              <button class="month" data-month="1">Apr</button>
+              <button class="month" data-month="1">May</button>
+              <button class="month" data-month="1">Jun</button>
+              <button class="month" data-month="1">Jul</button>
+              <button class="month" data-month="1">Aug</button>
+              <button class="month" data-month="1">Sep</button>
+              <button class="month" data-month="1">Oct</button>
+              <button class="month" data-month="1">Nov</button>
+              <button class="month" data-month="1">Dec</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container-with-images">
+        <div class="image-container">
+          <img
+            src="{% static 'images/img_9_760_cc4ffc.jpeg' %}"
+            class="image-container2"
+          />
+          <li>
+            <span><b>Science Day Quiz</b></span>
+          </li>
+          <li class="text1">
+            <img
+              src="{% static 'images/img_1_111_dc253c.png' %}"
+              alt="Image 1"
+            />
+            <span>Fridat,Feb 17,2:00PM</span>
+          </li>
+          <li class="text2">
+            <img
+              src="{% static 'images/img_1_116_6d16f2.png' %}"
+              alt="Image 2"
+            />
+            <span>Christ Hall,St Marrie's Block</span>
+          </li>
+          <li class="text3">
+            <img
+              src="{% static 'images/img_1_118_a86d3e.png' %}"
+              alt="Image 2"
+            />
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeraFRucfYvXUpLUjj35_3OEnwTrQkrwkn5O8TZ4kZfkQA91w/viewform?usp=sf_link"
+              ><span>Register</span></a
+            >
+          </li>
+          <li class="text4">
+            <img
+              src="{% static 'images/img_1_117_444c4e.png' %}"
+              alt="Image 3"
+            />
+            <a
+              href="D:\Users\APPLE\Documents\Project Folder\blog page\blog.html"
+              ><span>More</span></a
+            >
+          </li>
+        </div>
+        <div class="image-container4">
+          <div class="image-container5">
+            <img
+              src="{% static 'images/img_9_763_81b086.jpe' %}g"
+              class="image-container2"
+            />
+            <li>
+              <span><b>Java Workshop</b></span>
+            </li>
+            <li class="text1">
+              <img
+                src="{% static 'images/img_1_111_dc253c.png' %}"
+                alt="Image 1"
+              />
+              <span>Saturday,Feb 18,9.30AM</span>
+            </li>
+            <li class="text2">
+              <img
+                src="{% static 'images/img_1_116_6d16f2.png' %}"
+                alt="Image 2"
+              />
+              <span>Computer lab,St Chavara block</span>
+            </li>
+            <li class="text3">
+              <img
+                src="{% static 'images/img_1_118_a86d3e.png' %}"
+                alt="Image 2"
+              />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeraFRucfYvXUpLUjj35_3OEnwTrQkrwkn5O8TZ4kZfkQA91w/viewform?usp=sf_link"
+                ><span>Register</span></a
+              >
+            </li>
+            <li class="text4">
+              <img
+                src="{% static 'images/img_1_117_444c4e.png' %}"
+                alt="Image 3"
+              />
+              <a
+                href="D:\Users\APPLE\Documents\Project Folder\blog page\blog.html"
+                ><span>More</span></a
+              >
+            </li>
+          </div>
+          <div class="department-filter-container">
+            <img
+              src="{% static 'images/img_9_759_9d10c9.png' %}"
+              class="image-container3"
+            />
+            <li>
+              <span><b>Electrical Cup</b></span>
+            </li>
+            <li class="text1">
+              <img
+                src="{% static 'images/img_1_111_dc253c.png' %}"
+                alt="Image 1"
+              />
+              <span>Saturday,Feb 25,9:00 AM</span>
+            </li>
+            <li class="text2">
+              <img
+                src="{% static 'images/img_1_116_6d16f2.png' %}"
+                alt="Image 2"
+              />
+              <span>Christ autonomous college ground</span>
+            </li>
+            <li class="text3">
+              <img
+                src="{% static 'images/img_1_118_a86d3e.png' %}"
+                alt="Image 2"
+              />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeraFRucfYvXUpLUjj35_3OEnwTrQkrwkn5O8TZ4kZfkQA91w/viewform?usp=sf_link"
+                ><span>Register</span></a
+              >
+            </li>
+            <li class="text4">
+              <img
+                src="{% static 'images/img_1_117_444c4e.png' %}"
+                alt="Image 3"
+              />
+              <a
+                href="D:\Users\APPLE\Documents\Project Folder\blog page\blog.html"
+                ><span>More</span></a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'scripts1.js' %}"></script>
+{% endblock body%}

@@ -45,6 +45,16 @@
     {% block head %}{% endblock head %}
   </head>
   <body>
+    <header class="header">
+      <a href="#" class="logo"><img src="{% static 'images\cce.png' %}"></a>
+      <nav class="navbar">
+          <a href="{% url 'eventportalapp:events' %}">Events</a>
+          <a href="{% url 'eventportalapp:competition' %}">Competitions</a>
+          <a href="{% url 'eventportalapp:calendar' %}">Calendar</a>
+          <a href="{% url 'eventportalapp:register' %}"><button type="button" onclick=""><i class="fa-solid fa-circle-plus"></i></i>Create Events</button></a>
+          <a href="{% url 'eventportalapp:registercompetition' %}"><button type="button" onclick=""><i class="fa-solid fa-circle-plus"></i></i>Create Competitions</button></a>
+      </nav>
+    </header>
     {% block body %}{% endblock body %}
   </body>
 </html>

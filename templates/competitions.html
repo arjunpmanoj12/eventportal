@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% load static %} {% block title %} Competitions {% endblock title %} {% block style %}<link
+  rel="stylesheet"
+  href="{% static 'index.css' %}"
+/>{% endblock style %} {% block head %}{% endblock head %} {% block body %}
+
+<div class="new">
+  <h1>Upcoming Competitions</h1>
+</div>
+<div id="carouselExampleControls" class="carousel">
+  <div class="carousel-inner">
+    {% for competition in competition_lists %}
+    <div class="carousel-item">
+      <div class="card">
+        <div class="img-wrapper">
+          <img
+            src="{{ competition.img.url }}"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="card-body">
+          <h1 class="head">{{ competition.title }}</h1>
+          <ul>
+            <li>
+              <i class="fa-regular fa-calendar"></i>{{ competition.date }}
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> {{ competition.venue }}
+            </li>
+            <li>
+              <a href="{{ competition.url }}"
+                ><i class="fa-solid fa-user-plus"></i> Register</a
+              >
+            </li>
+            <li>
+              <a
+                href="{% url 'eventportalapp:competitiondetail' competition.title %}"
+                ><ul class="blue2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i
+                  >More
+                </ul></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"
+      ><i class="fa-solid fa-arrow-left" style="color: black"></i
+    ></span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"
+      ><i class="fa-solid fa-arrow-right" style="color: black"></i
+    ></span>
+  </button>
+</div>
+<script src="{% static './index.js' %}"></script>
+{% endblock body %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% load static %} {% block title %} Competition
+Details {% endblock title %} {% block style %}<link
+  rel="stylesheet"
+  href="{% static 'index.css' %}"
+/><link rel="stylesheet" href="{% static 'eventdetail.css' %}" />{% endblock
+style %} {% block head %}{% endblock head %} {% block body %}
+
+<div class="title"><h1>{{Competition.title}}</h1></div>
+<div class="img-container">
+  <img class="main" src="{{ competition.img.url }}" />
+</div>
+<div class="p-container">
+  <p>{{ competition.desc }}</p>
+  <div class="text-container">
+    <a href="{{ competition.url }}">Click Here to Register</a>
+  </div>
+  {% endblock body %}
+</div>
