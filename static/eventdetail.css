@@ -1,0 +1,154 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold");
+@import url("https://db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy-ExtraBold");
+@import url("https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular");
+@import url("https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 100;
+}
+
+.logo {
+  width: 100px;
+  height: 125.673px;
+  flex-shrink: 0;
+}
+
+.navbar a {
+  font-size: 20px;
+  font-family: "Syne", sans-serif;
+  color: #808080;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+button {
+  color: #3e31f1;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border-color: #3e31f1;
+  background-color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.navbar :hover {
+  color: #3e31f1;
+}
+
+.title {
+  padding-top: 160px;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: Gilroy-SemiBold;
+}
+
+.img-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.main {
+  width: 90%;
+  border-radius: 15px;
+}
+
+.p-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: Gilroy-Regular;
+  padding-top: 15px;
+}
+
+.comment {
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: Gilroy-SemiBold;
+  font-size: 20px;
+}
+
+.text-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.entryarea {
+  position: relative;
+}
+
+input {
+  position: absolute;
+  width: 90%;
+  font-size: 1.5em;
+  font-family: Gilroy-Regular;
+  padding: 0px 5px;
+  border-radius: 10px;
+  border-color: #808080;
+  border-width: 2px;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+}
+
+.labelname {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+  color: #808080;
+  margin-top: 8px;
+  margin-left: 30px;
+  font-family: Gilroy-Regular;
+  transition: 0.2s ease;
+  background-color: white;
+}
+
+input:focus,
+input:valid {
+  color: black;
+  border: 4px solid black;
+}
+
+input:focus + .labelname,
+input:valid + .labelname {
+  color: black;
+  height: 30px;
+  line-height: 30px;
+  transform: translate(-1px, -21px) scale(0.88);
+  z-index: 1111;
+}

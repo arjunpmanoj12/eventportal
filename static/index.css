@@ -1,0 +1,210 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url(https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold);
+@import url(https://db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy-ExtraBold);
+@import url(https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular);
+@import url(https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold);
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.header
+{
+    position: fixed;
+    top:0 px;
+    left:0 px;
+    width: 100%;
+    padding :10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: white;
+    z-index: 100;
+}
+.logo
+{
+    width: 100px;
+    height: 125.673px;
+    flex-shrink: 0;
+}
+
+.navbar a
+{
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+    color: #808080;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 30px;
+}
+button
+{
+    color:#3e31f1;
+    padding:8px 16px;
+    border-radius: 10px;
+    border-color: #3e31f1;
+    background-color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+i
+{
+    padding-right: 10px;
+}
+.navbar :hover {
+    color: #3e31f1;
+  }
+.textt h2{
+    position: static;
+    padding-top: 175px;
+    padding-left: 100px;
+    font-family: "Gilroy-ExtraBold";
+    font-weight: bold;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+.tet h3{
+    font-family: "Gilroy-SemiBold";
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 100px;
+    margin-bottom: 30px;
+    color: #3e31f1; 
+}
+.image
+{
+    width: 327px;
+    height: 305px;
+    border-radius: 30px;
+    object-fit:contain;
+    overflow: hidden;
+}
+.image img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.text h1{
+color: #000;
+font-family: "Gilroy-SemiBold";
+font-size: 25px;
+font-style: normal;
+line-height: 25px; /* 83.333% */
+text-align: center;
+padding-bottom: 10px;
+}
+.text ul
+{
+color: #666;
+font-family: 'Gilroy-Regular', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 100% */
+}
+.blue
+{
+margin-top: 40px;
+color: #3e31f1 !important;
+}
+.blue2
+{
+    color: #3e31f1 !important;
+}
+
+.text
+{
+    background-color: white;
+    width: 327px;
+    height: 305px;
+}
+.head{
+    font-family: "Gilroy-SemiBold";
+    margin-top: 70px;
+    font-size: 30px;
+}
+.text ul
+{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.text h1
+{
+ padding-top: 15px;   
+}
+li
+{
+    font-family: Gilroy-Regular;
+    font-weight: bold;
+    list-style-type: none;
+}
+li a
+{
+    text-decoration: none;
+}
+.carousel-inner {
+    padding: 1em;
+    position: relative;
+    padding-left: 70px;
+    margin-top: -60px; /* Adjust as needed to hide cards behind navbar */
+    z-index: 1; /* Ensure the carousel is behind the navbar */
+}
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 30px;
+    overflow: hidden; 
+    position: relative;
+    top: 30px;
+    width: 300px;
+}
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      margin-right: 30px;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+      position: relative;
+    }
+  }
+  .card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .card img {
+      height: 350px;
+      border-radius: 30px;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }

@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% load static %} {% block title %}Detail {% endblock title %} {% block style %}<link rel="stylesheet" href="{% static 'eventdetail.css' %}" />{% endblock style %} {% block head %}{% endblock head %} {% block body %}
+
+<header class="header">
+  <a
+    href="D:\Users\APPLE\Documents\Project Folder\Landing Page New\Landing Page New.html"
+    class="logo"
+    ><img src="{% static 'images\cce.png' %}"
+  /></a>
+  <nav class="navbar">
+    <a href="/">Events</a>
+    <a
+      href="D:\Users\APPLE\Documents\Project Folder\CalendarView\CalendarView\index.html"
+      >Calendar</a
+    >
+    <a href="D:\Users\APPLE\Documents\Project Folder\Next Events\index.html"
+      >Competitions</a
+    >
+    <a href="#"
+      ><button type="button" onclick="">
+        <i class="fa-solid fa-user"></i>Sign in
+      </button></a
+    >
+  </nav>
+</header>
+<div class="title"><h1>{{event.title}}</h1></div>
+<div class="img-container">
+  <img src="{{ event.img.url }}" class="main" alt="..." />
+</div>
+<div class="p-container"><p>{{event.desc}}</p></div>
+<h2 class="comment">Registration</h2>
+<div class="text-container">{{event.url}}</div>
+
+{% endblock body %}
